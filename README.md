@@ -1,4 +1,6 @@
 Control Flow
+Developer: William Julian
+Date: 9/23/2021
 
 We are going to work on refreshing our skills through python control flow...
 
