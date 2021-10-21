@@ -19,3 +19,6 @@ print("\nVVelcome to Cash-R-Us",firstName,lastName+", we will now set up a secur
 pin = input("Please choose a 4-digit Personal Identification Number: ")
 
 print("\nThank you", firstName, lastName + ", we see that set you PIN to", pin+".")
+
+
+print("\nWould you like to make a transaction through out Automated Teller Machine")
