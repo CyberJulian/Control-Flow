@@ -30,4 +30,4 @@ if yon == "YES":
 
 
 else:
-    print("Have a vvonderful day", firstName, lastName, ". Please come back and visit soon.")
+    print("\nHave a vvonderful day", firstName, lastName + ". Please come back and visit soon.")
