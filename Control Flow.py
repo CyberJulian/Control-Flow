@@ -29,12 +29,18 @@ if yon == "YES":
     # This part of the program will be asking users to complete a transaction through the ATM
     print("Please insert your ATM card\n")
     print("VVelcom to Cash-R-Us ATM,", firstName, lastName+"\n")
-    userPIN = input("What is your four digit PIN: ")
+    userPIN = input("VVhat is your four digit PIN: ")
 
     if pin == userPIN:
         balance = 69420
         print("\nYour Balance: $"+ str(balance))
 
+        # Ask users what type of transaction they want - Withdrawal - Deposit
+        typeOfTransaction = input("\nVVould you like to make a VVithdravval or a Deposit\nW = VVithdravval or D = Deposit:").upper()
+        if typeOfTransaction == "W":
+            withdrawlAmount = int(input("Enter the amount you vvish to vvithdravvl: "))
+            balance = balance - withdrawlAmount
+            print("Your new balance is: $" + str(balance))
 
     else:
         print("\nSorry,", firstName, lastName+", your PIN is incorrect.")
