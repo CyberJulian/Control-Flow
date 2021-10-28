@@ -36,11 +36,19 @@ if yon == "YES":
         print("\nYour Balance: $"+ str(balance))
 
         # Ask users what type of transaction they want - Withdrawal - Deposit
-        typeOfTransaction = input("\nVVould you like to make a VVithdravval or a Deposit\nW = VVithdravval or D = Deposit:").upper()
+        typeOfTransaction = input("\nVVould you like to make a VVithdravval, Deposit, or check your Balance\nW = VVithdravval or D = Deposit or B = Balance:").upper()
         if typeOfTransaction == "W":
-            withdrawlAmount = int(input("Enter the amount you vvish to vvithdravvl: "))
+            withdrawlAmount = int(input("\nEnter the amount you vvish to vvithdravvl: $"))
             balance = balance - withdrawlAmount
-            print("Your new balance is: $" + str(balance))
+            print("\nYour new balance is: $" + str(balance))
+        
+        elif typeOfTransaction == "D":
+            depositAmount = int(input("\nEnter the amount you vvish to deposit: $"))
+            balance = balance + depositAmount
+            print("\nYour new balance is: $" + str(balance))
+            
+        else:
+            print("\nYour balance is $" + str(balance))
 
     else:
         print("\nSorry,", firstName, lastName+", your PIN is incorrect.")
