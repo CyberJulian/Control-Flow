@@ -39,8 +39,14 @@ if yon == "YES":
         typeOfTransaction = input("\nVVould you like to make a VVithdravval, Deposit, or check your Balance\nW = VVithdravval or D = Deposit or B = Balance:").upper()
         if typeOfTransaction == "W":
             withdrawlAmount = int(input("\nEnter the amount you vvish to vvithdravvl: $"))
-            balance = balance - withdrawlAmount
-            print("\nYour new balance is: $" + str(balance))
+
+            if withdrawlAmount > balance:
+                print("\nSorry but the amount you wish to withdrawal is more than you have in your balance.")
+
+            else:
+                balance = balance - withdrawlAmount
+                print("\nYour new balance is: $" + str(balance))
+
         
         elif typeOfTransaction == "D":
             depositAmount = int(input("\nEnter the amount you vvish to deposit: $"))
